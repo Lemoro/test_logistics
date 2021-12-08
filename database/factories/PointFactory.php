@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Library\Faker\City;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PointFactory extends Factory
@@ -14,8 +13,6 @@ class PointFactory extends Factory
      */
     public function definition()
     {
-
-        $this->faker->addProvider(new City($this->faker));
 
         return [
             'name'    => $this->faker->myCityUa . '-' . $this->faker->myCityUa,

@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Library\Faker\Goods;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class LoadFactory extends Factory
@@ -14,8 +13,6 @@ class LoadFactory extends Factory
      */
     public function definition()
     {
-
-        $this->faker->addProvider(new Goods($this->faker));
 
         return [
             'name'   => $this->faker->myGoodsUa,
